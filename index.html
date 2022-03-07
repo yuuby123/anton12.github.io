@@ -30,22 +30,22 @@
             var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
             var swals = Swal
             async function mulai(){
-                var { value: Bebi } = await swals.fire({
+                var { value: nama } = await swals.fire({
                     title: 'Halo sayangku &#10084;&#65039;',
-                    input: Bebi,
+                    nama= Bebi,
                     confirmButtonText: 'Lanjut',
                     allowOutsideClick: false,
                     showCancelButton: false,
                 });                           
                 if(Bebi){
                   play();
-                	window.Bebi = Bebi;
-                    text2 = "Dari: " + author + ", untuk: " + window.Bebi + ".";
-                    text4 = "I Love U, " + window.Bebi + "!";         
+                	window.nama = nama;
+                    text2 = "Dari: " + author + ", untuk: " + window.nama + ".";
+                    text4 = "I Love U, " + window.nama + "!";         
                 	await swals.fire(`Selamat pagi Bebiku`);
                     await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
                     ketik();showDiv();showFt();
-                    document.getElementById("namamu").innerHTML = "Halo, " + Bebi + "!";                    
+                    document.getElementById("namamu").innerHTML = "Halo, " + nama + "!";                    
                 } else {
                     await swals.fire('Isi namanya ayanggg');
                     await swals.fire('Gak boleh kosong');
@@ -55,7 +55,7 @@
             mulai()
             async function lanjutan(){
                     var { value: sayang } = await swals.fire({
-                        title: `Sebelumnya, ${Bebi} sayang gak sama ${author} :(`,
+                        title: `Sebelumnya, ${nama} sayang gak sama ${author} :(`,
                         showDenyButton: true,
                         showCancelButton: false,
                         confirmButtonText: 'Sayang',
@@ -85,15 +85,15 @@
                             iloveu();siap();whs();
                             }
                         }
-                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=Hai,%20" + "*" + Bebi + "*" + " udah bacain semuanya" + "%0A%0A" + "*" + Bebi + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
+                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=Hai,%20" + "*" + nama + "*" + " udah bacain semuanya" + "%0A%0A" + "*" + nama + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
 </script>
     <script>
   var i=0,text;
   text = "Bahkan gula pun akan kalah manisnya ketika kamu tersenyum kepadaku."
-  var u=0,text2;//Text2 ada di if(Bebi)  
+  var u=0,text2;//Text2 ada di if(nama)  
   var o=0,text3;
   text3 = "Lihat ini sayang...                                 "
-  var a=0,text4;//Text4 ada di if(Bebi)
+  var a=0,text4;//Text4 ada di if(nama)
 </script>
   </body>
 </html>
