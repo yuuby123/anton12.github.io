@@ -39,7 +39,7 @@
                 });                           
                 if(bebiku){
                   play();
-                	window.bebiku = nama;
+                	window.bebiku = bebiku;
                     text2 = "Dari: " + author + ", untuk: " + window.bebiku + ".";
                     text4 = "I Love U, " + window.bebiku + "!";         
                 	await swals.fire(`Hai, ${bebiku}! &#10084;&#65039;`);
@@ -47,7 +47,8 @@
                     ketik();showDiv();showFt();
                     document.getElementById("namamu").innerHTML = "Halo, " + bebiku + "!";                    
                 } else {
-
+                    await swals.fire('Isi namanya ayanggg');
+                    await swals.fire('Gak boleh kosong');
                     mulai();
                 }
             }
