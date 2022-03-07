@@ -30,9 +30,9 @@
             var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
             var swals = Swal
             async function mulai(){
-                var { value: nama } = await swals.fire({
+                var { value: bebi } = await swals.fire({
                     title: 'Halo sayangku &#10084;&#65039;',
-                    nama= Bebi,
+                    nama: Bebi,
                     confirmButtonText: 'Lanjut',
                     allowOutsideClick: false,
                     showCancelButton: false,
@@ -40,12 +40,12 @@
                 if(Bebi){
                   play();
                 	window.nama = nama;
-                    text2 = "Dari: " + author + ", untuk: " + window.nama + ".";
-                    text4 = "I Love U, " + window.nama + "!";         
+                    text2 = "Dari: " + author + ", untuk: " + "Bebiku tercinta" + ".";
+                    text4 = "I Love U, " + "sayangku" + "!";         
                 	await swals.fire(`Selamat pagi Bebiku`);
                     await swals.fire(`Sekarang lihat ini ya &#10084;&#65039;`);
                     ketik();showDiv();showFt();
-                    document.getElementById("namamu").innerHTML = "Halo, " + nama + "!";                    
+                    document.getElementById("namamu").innerHTML = "Halo, " + "sayangku" + "!";                    
                 } else {
                     await swals.fire('Isi namanya ayanggg');
                     await swals.fire('Gak boleh kosong');
@@ -55,7 +55,7 @@
             mulai()
             async function lanjutan(){
                     var { value: sayang } = await swals.fire({
-                        title: `Sebelumnya, ${nama} sayang gak sama ${author} :(`,
+                        title: `Sebelumnya, bebi sayang gak sama ${author} :(`,
                         showDenyButton: true,
                         showCancelButton: false,
                         confirmButtonText: 'Sayang',
@@ -85,7 +85,7 @@
                             iloveu();siap();whs();
                             }
                         }
-                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=Hai,%20" + "*" + nama + "*" + " udah bacain semuanya" + "%0A%0A" + "*" + nama + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
+                        function bukaWa(){window.location = "https://api.whatsapp.com/send?phone=&text=Hai,%20" + "*" + "bebiku" + "*" + " udah bacain semuanya" + "%0A%0A" + "*" + nama + "*" + "%20" + window.sayang + " sama kamu " + "*" + window.persen + "*" + "%0A%0A" + dateTime;}
 </script>
     <script>
   var i=0,text;
